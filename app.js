@@ -29,7 +29,7 @@ function renderCafe(doc){
 }
 
 //get data
-db.collection('cafes').where('name', '==', 'x').orderBy('name').get().then((snapshot) => {
+db.collection('cafes').orderBy('name').get().then((snapshot) => {
     snapshot.docs.forEach(doc =>{
         renderCafe(doc)
     })
