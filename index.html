@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button>Add cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCqWy5bC6Lv5ygIxuqyrHmqyNA-0AL-Yp8",
+    authDomain: "quote-tester.firebaseapp.com",
+    databaseURL: "https://quote-tester.firebaseio.com",
+    projectId: "quote-tester",
+    storageBucket: "quote-tester.appspot.com",
+    messagingSenderId: "685992645506",
+    appId: "1:685992645506:web:76d853d3e17ea0ec7a359b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  
+</script>
+        <script src="app.js"></script>
+        
+    </body>
+</html>
